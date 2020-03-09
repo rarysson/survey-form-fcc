@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<main>
+		<h1 id="title">Pizza survey</h1>
+		<p id="description">Thank you for coming to our restaurant</p>
+
+		<form method="get" id="survey-form">
+			<label for="name" id="name-label">Name</label> <br>
+			<input type="text" name="name" id="name" placeholder="Enter your name..." required> <br>
+
+			<label for="email" id="email-label">Email</label> <br>
+			<input type="email" name="email" id="email" placeholder="Enter your email..." required> <br>
+
+			<label for="number" id="number-label">Age (optional)</label> <br>
+			<input type="number" name="age" id="number" min="10" max="110" placeholder="Enter your age..."> <br>
+
+			<label for="dropwn">What type of pizza did you eat?</label> <br>
+			<select name="type" id="dropdown">
+				<option selected disabled>Select an option</option>
+				<option value="chicago">Chicago</option>
+				<option value="california">California</option>
+				<option value="detroit">Detroit</option>
+				<option value="neapolitan">Neapolitan</option>
+			</select> <br>
+
+			<p>Would you recommend our restaurant to a friend?</p> <br>
+			<input type="radio" name="recommendation" value="yes" id="recommend-yes">
+			<label for="recommend-yes">Yes</label> <br>
+			<input type="radio" name="recommendation" value="maybe" id="recommend-maybe">
+			<label for="recommend-maybe">Maybe</label> <br>
+			<input type="radio" name="recommendation" value="no" id="recommend-no">
+			<label for="recommend-no">No</label> <br>
+
+			<p>What do you think we can improve?</p>
+			<input type="checkbox" name="improvement" id="improvement-price" value="price">
+			<label for="improvement-price">Price</label> <br>
+			<input type="checkbox" name="improvement" id="improvement-environment" value="environment">
+			<label for="improvement-environment">Environment</label> <br>
+			<input type="checkbox" name="improvement" id="improvement-reception" value="reception">
+			<label for="improvement-reception">Reception</label> <br>
+			<input type="checkbox" name="improvement" id="improvement-types" value="types">
+			<label for="improvement-types">New types of pizza</label> <br>
+
+			<p>Any suggestions?</p> <br>
+			<textarea name="suggestion" id="suggestion" placeholder="Enter your suggestions..."></textarea> <br>
+
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</main>
+</body>
+
+</html>
